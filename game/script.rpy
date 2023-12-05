@@ -1,17 +1,18 @@
 ﻿define e = Character("loki", color="#16a00a")
-
+define m = Character("main", color="#0a28a0")
 default question_tally = 0                                  # variable used in question_selector
 $ animal = ''                                               # variable to store the chosen animal
 
 
-###
+####
 
 
 label start:
     scene bg tree                                       # SCREEN 1
     show loki neutral
-    e "Ah, here you are my fellow time traveler, I sorta need your help, the multiverse depends on you, follow me"
-    
+    e "Ah, here you are my fellow time traveler, I sorta need your help, the multiverse is glitching"
+    show loki neutral at left with move
+    m "First, who are you and why would I help"
     show loki neutral at left with move
     label the_question:                                     # SCREEN 2
         scene bg portals toh scott
