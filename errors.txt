@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 12: 'size' is not a keyword argument or valid child of the hbox statement.
-    size 40
-        ^
+File "game/script.rpy", line 10: expected ':' not found.
+    transform shaky_effect xoffset 5 * (renpy.random.random() - 0.5) yoffset 5 * (renpy.random.random() - 0.5)
+                           ^
+
+File "game/script.rpy", line 12: expected ':' not found.
+    transform shaky_effect xoffset 0 yoffset 0
+                           ^
+
+File "game/script.rpy", line 23: expected ':' not found.
+    transform shaky_effect xoffset 5 * (renpy.random.random() - 0.5) yoffset 5 * (renpy.random.random() - 0.5)
+                           ^
+
+File "game/script.rpy", line 25: expected ':' not found.
+    transform shaky_effect xoffset 0 yoffset 0
+                           ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Dec  5 15:53:13 2023
+Tue Dec  5 16:33:15 2023

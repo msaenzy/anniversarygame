@@ -1,56 +1,43 @@
-Tue Dec  5 15:54:49 2023
+Tue Dec  5 16:33:15 2023
 Windows-10-10.0.22621
 Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.02s
+Bootstrap to the start of init.init. took 0.03s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
+Loading script. took 0.11s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\famil\\AppData\\Roaming/RenPy/backups\\anniversarygame':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
+
+File "game/script.rpy", line 10: expected ':' not found.
+    transform shaky_effect xoffset 5 * (renpy.random.random() - 0.5) yoffset 5 * (renpy.random.random() - 0.5)
+                           ^
+
+File "game/script.rpy", line 12: expected ':' not found.
+    transform shaky_effect xoffset 0 yoffset 0
+                           ^
+
+File "game/script.rpy", line 23: expected ':' not found.
+    transform shaky_effect xoffset 5 * (renpy.random.random() - 0.5) yoffset 5 * (renpy.random.random() - 0.5)
+                           ^
+
+File "game/script.rpy", line 25: expected ':' not found.
+    transform shaky_effect xoffset 0 yoffset 0
+                           ^
 DPI scale factor: 1.197917
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
+Interface start. took 0.10s
 
-Full traceback:
-  File "C:\Users\famil\OneDrive\Documents\renpy-8.1.3-sdk.7z\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\famil\OneDrive\Documents\renpy-8.1.3-sdk.7z\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\famil\OneDrive\Documents\renpy-8.1.3-sdk.7z\renpy-8.1.3-sdk\renpy\main.py", line 93, in run
-    renpy.display.screen.prepare_screens()
-  File "C:\Users\famil\OneDrive\Documents\renpy-8.1.3-sdk.7z\renpy-8.1.3-sdk\renpy\display\screen.py", line 1003, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/screens.rpy", line 725, in prepare_screen
-    screen preferences():
-  File "game/screens.rpy", line 725, in prepare
-    screen preferences():
-  File "C:\Users\famil\OneDrive\Documents\renpy-8.1.3-sdk.7z\renpy-8.1.3-sdk\renpy\sl2\slast.py", line 2015, in prepare
-    raise Exception("A screen named {} does not exist.".format(self.target))
-Exception: A screen named game_menu does not exist.
-
-After initialization, but before game start.
-  File "game/screens.rpy", line 725, in prepare_screen
-    screen preferences():
-  File "game/screens.rpy", line 725, in prepare
-    screen preferences():
-Exception: A screen named game_menu does not exist.
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.4369'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1920, 995) drawable=(1920, 995)
+Maximum texture size: 4096x4096
