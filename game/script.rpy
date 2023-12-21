@@ -1,5 +1,10 @@
-﻿define e = Character("loki", color="#16a00a")
+﻿define e = Character("Loki", color="#16a00a")
+define ll = Character("Loki, god of lies", color="#26ec14")
 define m = Character("main", color="#0a28a0")
+define s = Character("Scott!Mafer", color="#a0870a")
+define t = Character("Toh!Juli", color="#a00a37")
+define c = Character("crowley!Juli", color="#a00a37")
+define a = Character("Azira!Mafer", color="#e55a27")
 default question_tally = 0                                  # variable used in question_selector
 $ animal = ''                                               # variable to store the chosen animal
 
@@ -9,11 +14,13 @@ $ animal = ''                                               # variable to store 
 
 label start:
     scene bg tree                                       # SCREEN 1
+    ##play loki music
     show loki neutral
     e "Ah, here you are my fellow time traveler, I sorta need your help, the multiverse is glitching"
     show loki neutral at left with move
-    m "First, who are you and why would I help"
-    show loki neutral at left with move
+    m "First, who are you and why would I help you?"
+    show loki neutral
+    e "I'm loki, I'm the god of... I'm a god and you have to follow my instructions to keep the multiverse from falling apart, isn't that enough reason?"
     label the_question:                                     # SCREEN 2
         scene bg portals toh scott
         show loki neutral at left with move
@@ -26,10 +33,45 @@ label start:
                 show lumity dance
                 "..."
                 show lumity scared at left with moveinleft
-                "toh!Juli" "{i}Someone{/i} is here, I can barely see them{size=+10}why are they...{/size}"
-                jump quick_fox_path
+                t "{i}Someone{/i} is here, I can barely see them{size=+10}why are they...{/size}"
+                show lumity fight 
+                t "Stand back! what do you want?!"
+                m "I need your help... please, I don't have time to explain"
+                m "Can you give {i}it{/i} to me? "
+                ##why isnt it workign moveinright
+                show lumity paper at right with moveinright
+                t "I-"
+                t "I feel like I can trust you for some reason, I believe you"
+                show lumity paper at right with moveinright
+                t "Take it"
+                show lumity note
+                m "do you like me? yes, yes, and you? yes"
+
+                jump go
+                
             "scott":                                 # DOG
-                hide eileen with dissolve                   # SCREEN 4-1
+                scene bg scott  
+                show scott love
+                s "Have you ever seen Little Ashes?"
+                show scott question at left with moveinleft
+                m 'Do you have it? I think you know what I mean'
+                show scott exclamation
+                s "Sure, I always carry it with me"
+                show scott movie
+                m "thank you"
+                hide scott movie
+                show loki neutral
+                e "Where to now? hurry up!!"
+                scene bg portals toh scott
+                show loki neutral at left with move
+                menu:                                               # SCREEN 3
+                    "vampire":  
+                        jump vampire
+
+                    "go":
+                        jump go 
+                        
+
                 $ animal = 'dog'
                 "Eileen" "{b}Yes{/b}, because I am... {color=#808080}always... {size=-5}sleepy...{/size}{/color}"
                 jump lazy_dog_path
@@ -47,6 +89,26 @@ label question_selector:
         $ repeat_question = "Huh?"
     $ question_tally += 1
     return
+
+
+
+label go:
+    show go talk
+    c "A space-time traveler is about to visit us"
+    a "How is it that you know? There's no way-"
+    show go see
+    c "Hi, see? told ya angel, you need to give them the thing"
+    show go give 
+    a "I was actually going to give this to a certain demon, but well, guess you need it more today"
+    show go flower
+    c "Just be careful out there, watch out for the vamps! "
+    m "the WHAT now"
+    
+    
+
+
+    
+
 
 label quick_fox_path:
     # Path for "The Quick Fox" option

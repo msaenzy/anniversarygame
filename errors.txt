@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 11: expected ':' not found.
-    transform shaky_effect_screen xoffset 5 * (renpy.random.random() - 0.5) yoffset 5 * (renpy.random.random() - 0.5)
-                                  ^
-
-File "game/script.rpy", line 13: expected ':' not found.
-    transform shaky_effect_screen xoffset 0 yoffset 0
-                                  ^
+File "game/script.rpy", line 70: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "go"
+        ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Dec  5 16:36:22 2023
+Thu Dec 14 14:27:32 2023

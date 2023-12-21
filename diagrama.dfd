@@ -1,13 +1,19 @@
  Dfd (c)
 1
 1
-2
+1
 0
+0
+6
+1
+7
+opcion1
+1
 0
 4
 1
 34
-Escoge TOH (1 )o SCOTT PILGRIM (2)
+'Escoge 1 para scott y 2 para TOH'
 5
 1
 7
@@ -18,14 +24,32 @@ opcion1
 9
 opcion1=1
 4
+1
+5
+'toh'
+4
+1
+32
+'escoge 1 para vamp y otro para'
+7
 0
+1
+7
+opcion1
 13
 4
-0
+1
+6
+'vamp'
+4
+1
+9
+'moriste'
+13
+13
+4
+1
+7
+'scott'
 13
 1
-2
-0
-0
-0
-3
